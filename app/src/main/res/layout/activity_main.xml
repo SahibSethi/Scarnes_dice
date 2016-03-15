@@ -12,5 +12,65 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:id="@+id/scoreOverallTextView"
+        android:text="Your Score : 0 Computer Score : 0"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/diceImageView"
+        android:src="@drawable/dice1"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/comCustomtextView"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Roll"
+        android:id="@+id/rollButton"
+        android:onClick="rollButtonClicked"
+        android:layout_marginTop="65dp"
+        android:layout_below="@+id/diceImageView"
+        android:layout_toStartOf="@+id/diceImageView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hold"
+        android:id="@+id/holdButton"
+        android:onClick="holdButtonClicked"
+        android:layout_alignTop="@+id/rollButton"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:onClick="resetButtonClicked"
+        android:id="@+id/resetButton"
+        android:layout_alignTop="@+id/holdButton"
+        android:layout_toEndOf="@+id/diceImageView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="U-Turn: 0 C-Turn: "
+        android:layout_marginTop="15dp"
+        android:id="@+id/scoreTurnTextView"
+        android:layout_below="@+id/scoreOverallTextView"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Small Text"
+        android:id="@+id/comCustomtextView"
+        android:layout_below="@+id/scoreTurnTextView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp" />
+
 </RelativeLayout>
